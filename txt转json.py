@@ -45,11 +45,11 @@ def convert_to_json_file(in_path, out_path, fg):
     if fg:
         # 多轮
         json_data = text_to_duojson(text)
-        fg = '_duo'
+        fg = '_duo.json'
     else:
         # 单轮
         json_data = text_to_danjson(text)
-        fg = '_dan'
+        fg = '_dan.json'
 
     # 构建输出文件路径
     output_folder = os.path.join(out_path, 'data_format')
@@ -64,10 +64,10 @@ def convert_to_json_file(in_path, out_path, fg):
 
 
 # 假设这是你的文本文件路径
-input_path = "input_path"
+input_path = "data/cn/fengyun.txt"
 # 指定输出路径
-output_path = "output_path"
+output_path = "output/"
 
 # 调用函数进行转换并保存为JSON文件
-flag = False  # Ture 默认使用多轮对话格式， False 使用单轮对话格式
+flag = True  # Ture 默认使用多轮对话格式， False 使用单轮对话格式
 convert_to_json_file(input_path, output_path, flag)
