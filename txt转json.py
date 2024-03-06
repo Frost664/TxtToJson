@@ -64,9 +64,9 @@ def convert_to_json_file(in_path, out_path, fg):
 
 
 # 假设这是你的文本文件路径
-input_path = "data/cn/fengyun.txt"
+input_path = "input_path"
 # 指定输出路径
-output_path = "output/"
+output_path = output_path"
 
 # 调用函数进行转换并保存为JSON文件
 flag = True  # Ture 默认使用多轮对话格式， False 使用单轮对话格式
